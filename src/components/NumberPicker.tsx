@@ -1,6 +1,6 @@
 import * as React from "react";
 import NumberDisplayer from "./NumberDisplayer";
-import * as styles from './NumberPicker'
+import * as styles from './NumberPicker.css'
 
 const numberPickerStyle: React.CSSProperties = {
   width: '150px',
@@ -71,10 +71,10 @@ export default class NumberPicker extends React.Component<{}, NumberPickerState>
   }
 
   render() {
-    return <div style={styles.container}>
-      <button style={styles.button} onClick={this.increaseCounter}>+</button>
-      <span style={styles.label}>{this.state.counter}</span>
-      <button style={styles.button} onClick={this.decreaseCounter}>-</button>
+    return <div className={styles.container}>
+      <button className={styles.button} onClick={this.increaseCounter}>+</button>
+      <span className={styles.label}>{this.state.counter}</span>
+      <button className={styles.button} onClick={this.decreaseCounter}>-</button>
     </div>;
    }
 }
