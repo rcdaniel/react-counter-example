@@ -11,7 +11,7 @@
     "test-watch": "jest --watch"
   },
   "keywords": [],
-  "author": "rcdaniel & samantalg",
+  "author": "rcdaniel & Samantalg",
   "license": "MIT",
   "devDependencies": {
     "@types/enzyme": "^3.1.10",
